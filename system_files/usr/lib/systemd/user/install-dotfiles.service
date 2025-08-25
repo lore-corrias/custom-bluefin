@@ -1,0 +1,11 @@
+[Unit]
+Description=Install the dotfiles once on first boot
+ConditionPathExists=!%h/.config/chezmoi/initialized
+
+[Service]
+Type=oneshot
+ExecStart=/bin/sh -c 'chezmoi init --apply lore-corrias'
+ExecStartPost=/bin/sh -c 'echo "File to signal Systemd that the dotfiles have been applied" > %h/.config/chezmoi/initialized'
+
+[Install]
+WantedBy=default.target
