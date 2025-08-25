@@ -4,14 +4,14 @@ NetworkManager-openvpn
 NetworkManager-openvpn-gnome
 NetworkManager-openconnect
 NetworkManager-openconnect-gnome
-
 # file management
 thunar
-thunar-volman # external drives
+thunar-volman
 thunar-archive-plugin
-xarchiver # test
-imv # for viewing images
-
+# test
+xarchiver
+# for viewing images
+imv
 # these need to be tested
 gvfs-mtp
 gvfs-gphoto2
@@ -19,40 +19,32 @@ gvfs-smb
 gvfs-nfs
 gvfs-fuse
 gvfs-archive
-
 # virtualization
 libvirt
-docker
+# docker
 virt-manager
 # - VirtualBox
-
 # bluetooth
 blueman
 bluez
 bluez-tools
-
 # display
 brightnessctl
 # this might be useful?
 # - kanshi 
-
 # btrfs
 btrfs-assistant
 btrfsmaintenance
 snapper
 timeshift
-
 # notifications
 dunst
-
 # cli tools
 fd-find
 ripgrep
 zoxide
 zsh
 just
-chezmoi
-
 # misc
 ffmpeg
 ffmpegthumbnailer
@@ -67,17 +59,15 @@ alsa-firmware
 unrar
 zip
 vim
-
 # screenshots
 grim
 slurp
 swappy
-
 # de
 hyprland
 hyprlock
 hyprpaper
-hypridle # this needs to be configured
+hypridle 
 rofi-wayland
 sddm
 waybar
@@ -97,7 +87,6 @@ ddcutil
 wlogout
 # this needs to be checked
 # - wlogout
-
 # audio
 pavucontrol
 pipewire-pulseaudio
@@ -107,10 +96,8 @@ pipewire-libs-extra
 wireplumber
 # meh, doesn't seem useful
 # - playerctl
-
 # vpn
 tailscale
 wireshark
-
 # development
 distrobox

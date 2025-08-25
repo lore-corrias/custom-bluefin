@@ -18,3 +18,7 @@ wget "$DOWNLOAD_URL" -O /tmp/eza.tar.gz && \
 # Install grimblast
 
 wget https://raw.githubusercontent.com/hyprwm/contrib/refs/heads/main/grimblast/grimblast -O /usr/bin/grimblast
+
+# Install chezmoi
+
+sh -c "$(curl -fsLS get.chezmoi.io)"
