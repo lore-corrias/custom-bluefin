@@ -1,0 +1,39 @@
+{
+  "name": "custom-bluefin-devcontainer",
+  "image": "fedora:42",
+  "service": "custom-bluefin-devcontainer",
+  "features": {
+    "ghcr.io/devcontainers/features/common-utils:2": {
+      "username": "lore",
+      "userUid": "1000",
+      "userGid": "1000",
+      "upgradePackages": "true",
+      "configureZshAsDefaultShell": "true"
+    },
+    "ghcr.io/devcontainers/features/node:1": {},
+    "ghcr.io/devcontainers-extra/features/fd:1": {},
+    "ghcr.io/devcontainers-extra/features/ripgrep:1": {},
+    "ghcr.io/social-anthrax/eza-devcontainer/eza:0": {}
+  },
+  "containerEnv": {
+    "HOME_USERNAME": "lore",
+    "WAYLAND_DISPLAY": "wayland-1",
+    "XDG_RUNTIME_DIR": "/tmp"
+  },
+  "workspaceMount": "source=${localWorkspaceFolder},target=/workspace,type=bind,z,rw",
+  "workspaceFolder": "/workspace",
+  "mounts": [
+    "source=/run/user/1000/wayland-1,target=/tmp/wayland-0,type=bind,z,rw"
+  ],
+  "securityOpt": [
+    "label=disable"
+  ],
+  "runArgs": [
+    "--name",
+    "custom-bluefin-devcontainer",
+    "--hostname",
+    "custom-bluefin-devcontainer"
+  ],
+  "remoteUser": "lore",
+  "onCreateCommand": "sudo dnf install -y neovim tmux"
+}
