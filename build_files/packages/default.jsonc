@@ -1,0 +1,109 @@
+[
+  // Network utilities
+  "NetworkManager-tui",
+  "network-manager-applet",
+  "NetworkManager-openvpn",
+  "NetworkManager-openvpn-gnome",
+  "NetworkManager-openconnect",
+  "NetworkManager-openconnect-gnome",
+  // File manager
+  "thunar",
+  "thunar-volman",
+  "thunar-archive-plugin",
+  "xarchiver",
+  // Image viewer
+  // "imv",
+  // these need to be tested
+  "gvfs-mtp",
+  "gvfs-gphoto2",
+  "gvfs-smb",
+  "gvfs-nfs",
+  "gvfs-fuse",
+  "gvfs-archive",
+  // virtualization, docker, podman
+  "libvirt",
+  "docker-ce",
+  "docker-ce-cli",
+  "containerd.io",
+  "docker-buildx-plugin",
+  "docker-compose-plugin",
+  "virt-manager",
+  "wine-desktop",
+  "podman-compose",
+  // bluetooth
+  "blueman",
+  "bluez",
+  "bluez-tools",
+  // display management
+  "brightnessctl",
+  // this might be useful?
+  // - kanshi ",
+  // btrfs utilities
+  "btrfs-assistant",
+  "btrfsmaintenance",
+  "snapper",
+  "timeshift",
+  // notification daemon
+  "dunst",
+  // various CLI tools
+  "fd-find",
+  "ripgrep",
+  "zoxide",
+  "zsh",
+  "just",
+  // image / video manipulation
+  "ffmpeg",
+  "ffmpegthumbnailer",
+  "heif-pixbuf-loader",
+  // power management
+  "tlp",
+  // firewall
+  "ufw",
+  // archives management
+  "unrar",
+  "zip",
+  "vim",
+  // screenshots
+  "grim",
+  "slurp",
+  "swappy",
+  // desktop environment
+  "hyprland",
+  "hyprlock",
+  "hyprpaper",
+  "hypridle ",
+  "rofi-wayland",
+  "sddm",
+  "waybar",
+  "xdg-desktop-portal-hyprland",
+  "polkit",
+  "fprintd-pam",
+  "xdg-user-dirs",
+  "dbus-tools",
+  "dbus-daemon",
+  "wl-clipboard",
+  "qt5-qtwayland",
+  "qt6-qtwayland ",
+  "vulkan-validation-layers",
+  "vulkan-tools",
+  "ddcutil",
+  "wlogout",
+  // audio
+  "pavucontrol",
+  "pipewire-pulseaudio",
+  "pulseaudio-utils",
+  "pipewire",
+  "pipewire-libs-extra",
+  "wireplumber",
+  // vpns
+  "tailscale",
+  "wireshark",
+  // development
+  "distrobox",
+  "just",
+  // clipboard management
+  "cliphist",
+  // misc
+  "openssl",
+  "alsa-firmware"
+]

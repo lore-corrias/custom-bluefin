@@ -6,7 +6,7 @@ ConditionPathExists=!%h/.local/share/flatpak/.seeded
 Type=oneshot
 ExecStart=/bin/sh -c '\
   flatpak --user remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo && \
-  flatpak --user install -y org.mozilla.firefox com.google.Chrome com.discordapp.Discord com.github.tchx84.Flatseal md.obsidian.Obsidian app.devsuite.Ptyxis org.telegram.desktop \
+  flatpak --user install -y org.mozilla.firefox com.google.Chrome com.discordapp.Discord com.github.tchx84.Flatseal md.obsidian.Obsidian app.devsuite.Ptyxis org.telegram.desktop org.gnome.Loupe \
 '
 ExecStartPost=/bin/sh -c '\
   mkdir -p %h/.local/share/flatpak && \
