@@ -25,6 +25,6 @@ sh -c "$(curl -fsLS get.chezmoi.io)"
 
 # Install bat
 
-mkdir ~/xxh && cd ~/xxh
-wget -O xxh https://github.com/xxh/xxh/releases/download/0.8.12/xxh-x86_64.AppImage
-chmod +x xxh && ./xxh
+# mkdir ~/xxh && cd ~/xxh
+# wget -O xxh https://github.com/xxh/xxh/releases/download/0.8.12/xxh-x86_64.AppImage
+# chmod +x xxh && ./xxh
