@@ -95,6 +95,9 @@
   "pipewire",
   "pipewire-libs-extra",
   "wireplumber",
+  "pamixer",
+  // video
+  "obs-studio",
   // vpns
   "tailscale",
   "wireshark",
@@ -105,5 +108,12 @@
   "cliphist",
   // misc
   "openssl",
-  "alsa-firmware"
+  "alsa-firmware",
+  "rpi-imager",
+  // disc management
+  "gparted",
+  "mediawriter",
+  // terminal
+  "alacritty",
+
 ]

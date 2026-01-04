@@ -1,25 +1,12 @@
 {
-  "name": "custom-bluefin-dc",
+  "name": "custom-bluefin-devcontainer",
   "image": "localhost/devcontainer",
-  "service": "custom-bluefin-dc",
-  "containerEnv": {
-    "HOME_USERNAME": "lore",
-    "WAYLAND_DISPLAY": "${localEnv:WAYLAND_DISPLAY}",
-    "XDG_RUNTIME_DIR": "${localEnv:XDG_RUNTIME_DIR}"
-  },
+  "service": "custom-bluefin-devcontainer",
   "workspaceMount": "source=${localWorkspaceFolder},target=/workspace,type=bind,z,rw",
   "workspaceFolder": "/workspace",
-  "mounts": [
-    "source=${localEnv:XDG_RUNTIME_DIR}/${localEnv:WAYLAND_DISPLAY},target=${localEnv:XDG_RUNTIME_DIR}/${localEnv:WAYLAND_DISPLAY},type=bind,z,rw",
-    "source=${localEnv:XDG_RUNTIME_DIR}/bus,target=${localEnv:XDG_RUNTIME_DIR}/bus,type=bind,z,rw"
-  ],
-  "securityOpt": [
-    "label=disable"
-  ],
   "runArgs": [
     "--name",
     "custom-bluefin-dc"
   ],
-  "remoteUser": "lore",
-  "onCreateCommand": ""
+  "remoteUser": "lore"
 }
