@@ -15,11 +15,11 @@ systemctl --global enable podman-auto-update.timer
 
 ## Rpm-ostree automatic updates
 systemctl enable rpm-ostreed-automatic.timer
-systemctl --global enable flatpak-user-update.timer
-
-## Flatpak automatic updates
-systemctl enable flatpak-system-update.timer
 
 # Linking oneshot systemd units to multi-user.target.wants
 ln -sf /usr/lib/systemd/user/install-dotfiles.service /etc/systemd/user/default.target.wants/install-dotfiles.service
 ln -sf /usr/lib/systemd/user/setup-flatpak.service /etc/systemd/user/default.target.wants/setup-flatpak.service
+
+# Adding services for flatpak update with timer
+ln -sf /usr/lib/systemd/user/flatpak-user-update.service /etc/systemd/user/default.target.wants/flatpak-user-update.service
+ln -sf /usr/lib/systemd/user/flatpak-user-update.timer /etc/systemd/user/default.target.wants/flatpak-user-update.timer
