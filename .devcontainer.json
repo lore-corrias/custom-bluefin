@@ -1,12 +1,26 @@
 {
-  "name": "custom-bluefin-devcontainer",
-  "image": "localhost/devcontainer",
-  "service": "custom-bluefin-devcontainer",
-  "workspaceMount": "source=${localWorkspaceFolder},target=/workspace,type=bind,z,rw",
+  "name": "custom-bluefin-dc",
+  "image": "debian:bookworm-slim",
+  "service": "custom-bluefin-dc",
   "workspaceFolder": "/workspace",
-  "runArgs": [
-    "--name",
-    "custom-bluefin-dc"
-  ],
-  "remoteUser": "lore"
+  "features": {
+    "ghcr.io/devcontainers/features/common-utils:2": {
+      "installZsh": true,
+      "configureZshAsDefaultShell": true,
+      "upgradePackages": true,
+      "installOhMyZsh": false,
+      "installOhMyZshConfig": false,
+      "username": "none",
+      "userUid": 1000,
+      "userGid": 1000
+    },
+    "ghcr.io/devcontainers/features/docker-in-docker:2": {},
+    "ghcr.io/jsburckhardt/devcontainer-features/just:1": {}
+  },
+  "containerEnv": {
+    "LANG": "en_US.UTF-8",
+    "LANGUAGE": "en_US:en"
+  },
+  "remoteUser": "root",
+  "containerUser": "root"
 }

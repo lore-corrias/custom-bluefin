@@ -6,6 +6,7 @@
   "NetworkManager-openvpn-gnome",
   "NetworkManager-openconnect",
   "NetworkManager-openconnect-gnome",
+  "mullvad-vpn",
   // File manager
   "thunar",
   "thunar-volman",

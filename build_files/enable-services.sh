@@ -16,6 +16,9 @@ systemctl --global enable podman-auto-update.timer
 ## Rpm-ostree automatic updates
 systemctl enable rpm-ostreed-automatic.timer
 
+## Enable Mullvad service
+systemctl enable mullvad-daemon
+
 # Linking oneshot systemd units to multi-user.target.wants
 ln -sf /usr/lib/systemd/user/install-dotfiles.service /etc/systemd/user/default.target.wants/install-dotfiles.service
 ln -sf /usr/lib/systemd/user/setup-flatpak.service /etc/systemd/user/default.target.wants/setup-flatpak.service
