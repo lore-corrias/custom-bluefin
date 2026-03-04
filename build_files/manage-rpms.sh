@@ -12,6 +12,12 @@ rpm-ostree install \
 	https://mirrors.rpmfusion.org/free/fedora/rpmfusion-free-release-42.noarch.rpm \
 	https://mirrors.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-42.noarch.rpm
 
+# Create directories for packages installed under /opt
+# to bypass a cpio bug when creating a directory under a symlink
+# (which is /opt -> /var/opt)
+mkdir -p /var/opt/vagrant && 
+  mkdir -p /var/opt/Mullvad\ VPN
+
 ## Install packages from the default list
 grep -v '^\s*\/\/' /ctx/packages/default.jsonc | jq -r '.[]' | xargs dnf5 install -y \
   && dnf5 clean all
