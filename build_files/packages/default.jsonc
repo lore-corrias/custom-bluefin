@@ -79,6 +79,7 @@
   "hyprpaper",
   "hypridle",
   // "hyprland-qtutils",
+  "hyprpolkitagent",
   "rofi-wayland",
   "sddm",
   "waybar",
@@ -117,6 +118,7 @@
   "openssl",
   "alsa-firmware",
   "rpi-imager",
+  "qdirstat",
   // disc management
   "gparted",
   "mediawriter",
