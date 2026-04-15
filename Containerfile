@@ -3,7 +3,7 @@ FROM scratch AS ctx
 COPY build_files /
 
 # Base Image
-FROM ghcr.io/ublue-os/bluefin-dx:42
+FROM ghcr.io/ublue-os/bluefin-dx:43
 
 # Mounting additional files, such as systemd services
 COPY system_files /
