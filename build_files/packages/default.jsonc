@@ -61,7 +61,8 @@
   "ffmpegthumbnailer",
   "heif-pixbuf-loader",
   // power management
-  "tlp",
+  // "tlp",
+  // "power-profiles-daemon",
   // firewall
   "ufw",
   // archives management
@@ -78,7 +79,7 @@
   "hyprlock",
   "hyprpaper",
   "hypridle",
-  // "hyprland-qtutils",
+  "hyprland-guiutils",
   "hyprpolkitagent",
   "rofi-wayland",
   "sddm",

@@ -1,9 +1,14 @@
 # Allow build scripts to be referenced without being copied into the final image
+ARG FEDORA_VERSION="44"
+
 FROM scratch AS ctx
 COPY build_files /
 
 # Base Image
-FROM ghcr.io/ublue-os/bluefin-dx:43
+FROM ghcr.io/ublue-os/bluefin-dx:${FEDORA_VERSION}
+
+ARG FEDORA_VERSION
+ENV FEDORA_VERSION=${FEDORA_VERSION}
 
 # Mounting additional files, such as systemd services
 COPY system_files /
